@@ -1,3 +1,4 @@
+#백준 2839
 N = int(input())
 bag = 0
 while True:
