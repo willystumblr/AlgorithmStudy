@@ -13,4 +13,8 @@ for i in range(len(alphabet)):
         loc.append(-1)   
     print(loc[i], end =' ')
 
-
+#매우 안좋은 풀이방법...
+#string = input()
+#alphabet = "abcdefghijklmnopqrstuvwxyz"
+#for i in alphabet:
+#    print(string.find(i), end = ' ')
