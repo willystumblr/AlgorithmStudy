@@ -1,3 +1,4 @@
+#백준 1475
 room = input()
 sixplusnine = 0
 counts = []
