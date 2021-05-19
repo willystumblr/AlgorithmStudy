@@ -1,6 +1,5 @@
 #백준 1260
-#704ms인데 1등이랑 10배 차이남..
-
+import sys
 from collections import deque 
 
 def dfs(start):
@@ -21,12 +20,12 @@ def bfs(start):
                 queue.append(k)
                 visited_2[k] = True
 
-n, m, start = map(int, input().split())
+n, m, start = map(int, sys.stdin.readline().split())
 graph = [[0]*(n+1) for _ in range(n+1)]
 visited = [False for _ in range(n+1)]
 visited_2 = [False for _ in range(n+1)]
 for i in range(m):
-    x, y = map(int, input().split())
+    x, y = map(int, sys.stdin.readline().split())
     graph[x][y] = 1
     graph[y][x] = 1
 
