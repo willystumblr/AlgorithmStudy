@@ -1,4 +1,5 @@
 #백준 1931
+#sort
 import sys
 N = int(input())
 meeting = [(tuple(map(int, sys.stdin.readline().split()))) for _ in range(N)]
