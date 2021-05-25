@@ -20,3 +20,26 @@ public class _11726 {
 		System.out.println(array[M]);
 	}
 }
+
+비슷한 문제 - 11727번
+package _백준;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class _11727 {
+
+	public static void main(String[] args) throws NumberFormatException, IOException {
+		BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+		int M = Integer.parseInt(bf.readLine());
+		int[] array = new int[1001];
+		array[0]=1;
+		array[1]=1;
+		for(int i=2;i<=M;i++)
+		{
+			array[i]=(2*array[i-2]+array[i-1])%10007;
+		}
+		System.out.println(array[M]);
+	}
+}
