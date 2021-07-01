@@ -18,7 +18,7 @@ public class 실전1주차2번 {
 		}
 		int sum=0;
 		for (int j=0; j<i; j++) {
-			if (array[j] !=1 && array[j]!=0) {
+			if (array[j] >1) {
 				if (sum !=0) sum*=array[j];
 				else sum=array[j];
 			}
